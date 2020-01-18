@@ -1,15 +1,18 @@
 install:
 	yarn install
 
-build:
-	yarn build
+run: install
+	yarn run start
 
 clean:
 	rm -rf build/*
 
-deploy:
+build: install
+	yarn build
+
+deploy: clean build
 	cp -R build/* docs/
 	git add docs
 	git commit -m "Deploy `git rev-parse --verify HEAD`"
 	git push origin master
-
+ 
