@@ -7,7 +7,8 @@ A Gospel-sharing app built on React Native. Runs on web and mobile.
 ### Prerequisites
 
 1. Install `npm` (https://www.npmjs.com/)
-1. `[sudo] npm install -g yarn`
+1. Install `yarn`
+    `[sudo] npm install -g yarn`
 
 ### Install the app
 
