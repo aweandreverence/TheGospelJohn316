@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { Button, Image, Text, ScrollView, View } from 'react-native';
+//import { Button, Image, Text, ScrollView, View } from 'react-native';
+import { View } from 'react-native';
 
 import styles from './styles';
 import SplashScreen from './splash';
-import Storyboard from './storyboard';
+import Storyboard from './components/storyboard';
 
 class App extends Component {
     constructor(props) {

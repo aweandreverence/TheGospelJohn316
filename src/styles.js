@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
 
+
 const styles = StyleSheet.create({
     app: {
         marginHorizontal: 'auto',
@@ -13,14 +14,14 @@ const styles = StyleSheet.create({
     },
     title: {
         fontWeight: 'bold',
-        fontSize: '1.5rem',
+        fontSize: '2.5rem',
         marginVertical: '1em',
         textAlign: 'center'
     },
     text: {
-        lineHeight: '1.5em',
-        fontSize: '1.125rem',
-        marginVertical: '1em',
+        lineHeight: '20em',
+        fontSize: '1.25rem',
+        marginVertical: '2.5em',
         textAlign: 'center'
     },
     link: {
@@ -30,8 +31,11 @@ const styles = StyleSheet.create({
         fontFamily: 'monospace, monospace'
     },
     storyboardPage: {
-        border: '1px solid #000000'
+        borderWidth: 1,
+        borderStyle: 'solid',
+        borderColor: '#000000'
     }
 });
+
 
 export default styles;
