@@ -60,7 +60,6 @@ class Storyboard extends Component {
     }
 
     buildFrame() {
-        const frame = StoryboardFrames[this.state.frame];
         const frameElements = this.getFrameElements();
 
         const renderedFrameElements = _.map(frameElements, (frameElement, index) => {
