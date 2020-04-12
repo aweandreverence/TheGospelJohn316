@@ -13,3 +13,7 @@ A Gospel-sharing app built on React Native. Runs on web and mobile.
 ### Install the app
 
 1. `make install`
+
+## Credits
+
+This app was commissioned by the [California Southern Baptist Convention](https://www.csbc.com/).
