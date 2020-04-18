@@ -13,7 +13,10 @@ class Storyboard extends Component {
         super(props);
 
         this.state = {
+            // NOTE: for production, set frame to `0`
+            // for development, set frame to any value to test a specific frame
             frame: 0
+            //frame: 6
         };
     }
 
@@ -72,8 +75,9 @@ class Storyboard extends Component {
             };
 
             const key = 'frame-element-' + index;
+            const className = `element-${frameElement.key}`;
             const renderedFrameElement = (
-<div key={key} style={style}>
+<div key={key} className={className} style={style}>
   {element}
 </div>
             );
