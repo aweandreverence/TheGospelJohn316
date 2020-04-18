@@ -36,26 +36,47 @@ class Storyboard extends Component {
         this.props.app.goToSplashScreen();
     }
 
+    getFoundationId(foundationValue, currentFrameId) {
+        let foundationId = null;
+
+        if (foundationValue === null) {
+            foundationId = null;
+        } else if (typeof(foundationValue) === 'string' && foundationValue === 'auto') {
+            foundationId = currentFrameId - 1;
+        } else if (typeof(foundationValue) === 'number' && foundationValue >= 0) {
+            foundationId = foundationValue;
+        } else if (typeof(foundationValue) === 'number' && foundationValue < 0) {
+            foundationId = currentFrameId + foundationValue;
+        } else {
+            throw `Illegal value for foundationValue: ${foundationValue}`;
+        }
+
+        return foundationId;
+    }
+
     getFrameElements() {
-        const frame = StoryboardFrames[this.state.frame];
+        const frameId = this.state.frame;
+        const frame = StoryboardFrames[frameId];
 
         // initialize with elements from current frame
         let frameElements = frame.layout.add;
 
         // recursively add frame elements from this frame's foundation
         const framesVisited = {};
-        let foundation = frame.layout.foundation;
 
-        while (foundation !== null) {
-            if (framesVisited[foundation]) {
+        let foundationId = this.getFoundationId(frame.layout.foundation, frameId);
+
+        while (foundationId !== null) {
+            if (framesVisited[foundationId]) {
                 // frame already visited, indicating an infinite loop
-                foundation = null;
+                foundationId = null;
             } else {
                 // concatenate frame elements
-                const foundationFrame = StoryboardFrames[foundation];
+                const foundationFrame = StoryboardFrames[foundationId];
                 frameElements = _.concat(frameElements, foundationFrame.layout.add);
                 // update loop condition
-                foundation = foundationFrame.layout.foundation;
+                foundationId = this.getFoundationId(foundationFrame.layout.foundation, foundationId);
+                console.log(foundationId);
             }
         }
 

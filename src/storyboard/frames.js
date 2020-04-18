@@ -14,7 +14,7 @@ const StoryboardFrames = {
     },
     1: {
         layout: {
-            foundation: 0,
+            foundation: 'auto',
             add: [
                 {
                     key: 'slash',
@@ -33,7 +33,7 @@ const StoryboardFrames = {
     },
     2: {
         layout: {
-            foundation: 1,
+            foundation: 'auto',
             add: [
                 {
                     key: 'lineToLife',
@@ -52,7 +52,7 @@ const StoryboardFrames = {
     },
     3: {
 	    layout: {
-	        foundation: 2,
+	        foundation: 'auto',
 	        add: [
 		        {
 		            key: 'redX',
@@ -71,7 +71,7 @@ const StoryboardFrames = {
     },
     4: {
 	    layout: {
-	        foundation: 3,
+	        foundation: 'auto',
 	        add: [
 		        {
 		            key: 'lineToDeath',
@@ -90,7 +90,7 @@ const StoryboardFrames = {
     },
     5: {
 	    layout: {
-	        foundation: 4,
+	        foundation: 'auto',
 	        add: [
 		        {
 		            key: 'sin',
@@ -146,7 +146,7 @@ const StoryboardFrames = {
     },
     7: {
 	    layout: {
-	        foundation: 5,
+	        foundation: -2,
 	        add: [
 		        {
 		            key: 'lineToGoodWorks',
@@ -171,7 +171,7 @@ const StoryboardFrames = {
     },
     8: {
 	    layout: {
-	        foundation: 7,
+	        foundation: 'auto',
 	        add: [
 		        {
 		            key: 'lineToJoinChurch',
@@ -190,7 +190,14 @@ const StoryboardFrames = {
 		            x: 141,
 		            y: 122,
 		            z: 1
-		        },
+		        }
+	        ]
+	    }
+    },
+    9: {
+	    layout: {
+	        foundation: 'auto',
+	        add: [
 		        {
 		            key: 'lineToGoodWorks',
 		            x: 200,
@@ -212,9 +219,9 @@ const StoryboardFrames = {
 	        ]
 	    }
     },
-    9: {
+    10: {
 	    layout: {
-	        foundation: 8,
+	        foundation: 'auto',
 	        add: [
 		        {
 		            key: 'bible',
