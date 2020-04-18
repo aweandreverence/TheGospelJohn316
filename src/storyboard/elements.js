@@ -97,26 +97,26 @@ const StoryboardElements = {
 	    SIN
 	</StoryboardElement>
     ),
-    'treeTrunk': (
+    'tree': (
 	    <StoryboardElement>
-	    <div
-	style={{
-	    width: 20,
-	    height: 75,
-	    backgroundColor: Colors.brown
-	}}
-	    ></div>
-	    </StoryboardElement>
-    ),
-    'treeLeaves': (
-	    <StoryboardElement>
-	    <div
-	style={{
-	    width: 80,
-	    height: 75,
-	    backgroundColor: Colors.greenLeaf
-	}}
-	    ></div>
+          <div
+           className="tree-leaves"
+           style={{
+	          width: 80,
+	          height: 75,
+	          backgroundColor: Colors.greenLeaf
+	       }}
+	      ></div>
+	      <div
+           className="tree-trunk"
+ 	       style={{
+	          width: 20,
+	          height: 75,
+	          backgroundColor: Colors.brown,
+              position: 'relative',
+              left: 30
+	       }}
+	      ></div>
 	    </StoryboardElement>
     ),
     'sins': (
@@ -124,7 +124,7 @@ const StoryboardElements = {
 	     style={{
 	         fontSize: 18,
              fontWeight: 'bold',
-	         color: Colors.beige
+	         color: Colors.gold
 	     }}
 	    >
 	    SINS
@@ -204,15 +204,25 @@ const StoryboardElements = {
 	      >N</div>
         </StoryboardElement>
     ),
+    'crown': (
+        <StoryboardElement
+         style={{
+            fontSize: 100,
+            color: Colors.gold
+         }}
+         >
+          ♔
+        </StoryboardElement>
+    ),
     'lineToGoodWorks': (
 	    <StoryboardElement>
-	    <div
-	style={{
-	    width: 3,
-	    height: 48,
-	    backgroundColor: Colors.black
-	}}
-	    ></div>
+          <div
+	       style={{
+	          width: 3,
+	          height: 48,
+	          backgroundColor: Colors.black
+	          }}
+          ></div>
 	    </StoryboardElement>
     ),
     'goodWorks': (

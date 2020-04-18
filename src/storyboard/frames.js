@@ -106,47 +106,82 @@ const StoryboardFrames = {
 	        foundation: null,
 	        add: [
 		        {
-		            key: 'treeTrunk',
-		            x: 100,
-		            y: 125,
-		            z: 1
-		        },
-		        {
-		            key: 'treeLeaves',
-		            x: 70,
-		            y: 50,
-		            z: 2
-		        },
-		        {
 		            key: 'sin',
 		            x: 95,
 		            y: 215,
 		            z: 1
-		        },
-		        {
-		            key: 'sins',
-		            x: 130,
-		            y: 15,
-		            z: 1
-		        },
-                {
-                    key: 'chair',
-                    x: 305,
-                    y: 108,
-                    z: 1
-                },
-                {
-                    key: 'sIn',
-                    x: 292,
-                    y: 125,
-                    z: 1
-                }
+		        }
 	        ]
 	    }
     },
     7: {
 	    layout: {
-	        foundation: -2,
+	        foundation: 'auto',
+	        add: [
+		        {
+		            key: 'tree',
+		            x: 70,
+		            y: 50,
+		            z: 2
+		        }
+	        ]
+	    }
+    },
+    8: {
+	    layout: {
+	        foundation: 'auto',
+	        add: [
+		        {
+		            key: 'sins',
+		            x: 130,
+		            y: 15,
+		            z: 1
+		        }
+	        ]
+	    }
+    },
+    9: {
+	    layout: {
+	        foundation: 'auto',
+	        add: [
+                {
+                    key: 'chair',
+                    x: 305,
+                    y: 108,
+                    z: 1
+                }
+	        ]
+	    }
+    },
+    10: {
+	    layout: {
+	        foundation: 'auto',
+	        add: [
+                {
+                    key: 'sIn',
+                    x: 292,
+                    y: 125,
+                    z: 1
+                },
+                {
+                    key: 'crown',
+                    x: 295,
+                    y: -3,
+                    z: 1
+                }
+	        ]
+	    }
+    },
+    11: {
+	    layout: {
+	        foundation: -6,
+	        add: [
+	        ]
+	    }
+    },
+    12: {
+	    layout: {
+	        foundation: 'auto',
 	        add: [
 		        {
 		            key: 'lineToGoodWorks',
@@ -169,7 +204,7 @@ const StoryboardFrames = {
 	        ]
 	    }
     },
-    8: {
+    13: {
 	    layout: {
 	        foundation: 'auto',
 	        add: [
@@ -194,7 +229,7 @@ const StoryboardFrames = {
 	        ]
 	    }
     },
-    9: {
+    14: {
 	    layout: {
 	        foundation: 'auto',
 	        add: [
@@ -219,7 +254,7 @@ const StoryboardFrames = {
 	        ]
 	    }
     },
-    10: {
+    15: {
 	    layout: {
 	        foundation: 'auto',
 	        add: [

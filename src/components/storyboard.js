@@ -16,7 +16,7 @@ class Storyboard extends Component {
             // NOTE: for production, set frame to `0`
             // for development, set frame to any value to test a specific frame
             frame: 0
-            //frame: 6
+            //frame: 10
         };
     }
 
