@@ -94,7 +94,7 @@ const StoryboardFrames = {
 	    add: [
 		{
 		    key: 'sin',
-		    x: 285,
+		    x: 270,
 		    y: 85,
 		    z: 1
 		}
@@ -181,13 +181,62 @@ const StoryboardFrames = {
 		{
 		    key: 'lineToGoodWorks',
 		    x: 100,
-		    y: 155,
+		    y: 165,
 		    z: 1
 		},
 		{
 		    key: 'goodWorks',
-		    x: 75,
-		    y: 100,
+		    x: 80,
+		    y: 115,
+		    z: 1
+		},
+		{
+		    key: 'arrowUp',
+		    x: 91,
+		    y: 150,
+		    z: 1
+		}
+	    ]
+	}
+    },
+    8: {
+	layout: {
+	    foundation: 7,
+	    add: [
+		{
+		    key: 'lineToJoinChurch',
+		    x: 150,
+		    y: 135,
+		    z: 1
+		},
+		{
+		    key: 'joinChurch',
+		    x: 128,
+		    y: 90,
+		    z: 1
+		},
+		{
+		    key: 'arrowUp',
+		    x: 141,
+		    y: 122,
+		    z: 1
+		},
+		{
+		    key: 'lineToGoodWorks',
+		    x: 200,
+		    y: 165,
+		    z: 1
+		},
+		{
+		    key: 'otherReligion',
+		    x: 175,
+		    y: 115,
+		    z: 1
+		},
+		{
+		    key: 'arrowUp',
+		    x: 191,
+		    y: 150,
 		    z: 1
 		}
 	    ]

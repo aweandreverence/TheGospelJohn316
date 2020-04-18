@@ -89,7 +89,7 @@ const StoryboardElements = {
     'sin': (
 	    <StoryboardElement
 	style={{
-	    fontSize: 18,
+	    fontSize: 24,
 	    fontWeight: 'bold',
 	    color: '#FF0000'
 	}}
@@ -201,7 +201,7 @@ const StoryboardElements = {
 	    <div
 	style={{
 	    width: 3,
-	    height: 60,
+	    height: 48,
 	    backgroundColor: '#000'
 	}}
 	    ></div>
@@ -210,12 +210,57 @@ const StoryboardElements = {
     'goodWorks': (
 	    <StoryboardElement
 	style={{
-	    fontSize: 18,
+	    textAlign: 'center',
+	    fontSize: 15,
 	    fontWeight: 'bold',
 	    color: '#000'
 	}}
 	    >
 	    Good<br />Works
+	</StoryboardElement>
+    ),
+    'arrowUp': (
+	    <StoryboardElement
+	style={{
+	    fontSize: 25,
+	    color: '#000'
+	}}
+	    >
+	    {String.fromCharCode(9650)}
+	</StoryboardElement>
+    ),
+    'joinChurch' : (
+	    <StoryboardElement
+	style={{
+	    textAlign: 'center',
+	    fontSize: 15,
+	    fontWeight: 'bold',
+	    color: '#000'
+	}}
+	    >
+	    Join<br />Church
+	</StoryboardElement>
+    ),
+    'lineToJoinChurch' : (
+	    <StoryboardElement
+	style={{
+	    width: 3,
+	    height: 80,
+	    backgroundColor: '#000'
+	}}
+	    >
+	</StoryboardElement>
+    ),
+    'otherReligion' : (
+	    <StoryboardElement
+	style={{
+	    textAlign: 'center',
+	    fontSize: 15,
+	    fontWeight: 'bold',
+	    color: '#000'
+	}}
+	    >
+	    Other<br />Religion
 	</StoryboardElement>
     )
 };
