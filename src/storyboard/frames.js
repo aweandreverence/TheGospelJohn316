@@ -241,6 +241,19 @@ const StoryboardFrames = {
 		}
 	    ]
 	}
+    },
+    9: {
+	layout: {
+	    foundation: 8,
+	    add: [
+		{
+		    key: 'bible',
+		    x: 175,
+		    y: 100,
+		    z: 1
+		}
+	    ]
+	}
     }
 
 };

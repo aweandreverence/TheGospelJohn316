@@ -262,6 +262,18 @@ const StoryboardElements = {
 	    >
 	    Other<br />Religion
 	</StoryboardElement>
+    ),
+    'bible' : (
+	    <StoryboardElement
+	style={{
+	    textAlign: 'center',
+	    fontSize: 15,
+	    fontWeight: 'bold',
+	    color: '#000'
+	}}
+	    >
+	    <image src="bible-image.png" alt="John 3:16" width="129" height="76" />
+	</StoryboardElement>
     )
 };
 
