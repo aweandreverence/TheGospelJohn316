@@ -285,8 +285,8 @@ const StoryboardFrames = {
 		},
 		{
 		    key: 'JESUS',
-		    x: 264,
-		    y: 83,
+		    x: 249,
+		    y: 79,
 		    z: 1000
 		},
 		{

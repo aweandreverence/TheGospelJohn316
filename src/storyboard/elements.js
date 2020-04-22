@@ -304,7 +304,7 @@ const StoryboardElements = {
 	    John 3:16
 	</div>
 	    </StoryboardElement>
-    
+
     ),
     'crossLeft' : (
            <StoryboardElement>
@@ -454,9 +454,10 @@ const StoryboardElements = {
 	    <StoryboardElement
 	style={{
 	    textAlign: 'center',
-	    fontSize: 24,
+	    fontSize: 30,
 	    fontWeight: 'bold',
-	    color: Colors.black
+	    color: Colors.black,
+        textShadow: `1px 0px ${Colors.black}`
 	}}
 	    >
 	    JESUS
@@ -481,7 +482,7 @@ const StoryboardElements = {
 	    fontSize: 25
 	}}
             >
-	    ▲ 
+	    ▲
             </div>
 	    <div className='vert'
 	style={{
