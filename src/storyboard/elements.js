@@ -281,16 +281,298 @@ const StoryboardElements = {
 	    Other<br />Religion
 	</StoryboardElement>
     ),
-    'bible' : (
+    'john316Bible' : (
+	    <StoryboardElement>
+	<div style={{
+	    textAlign: 'center',
+	    fontSize: 100,
+	    color: Colors.black
+	}}
+        >
+	    🕮
+        </div>
+        <div style={{
+		fontSize: 16,
+		fontWeight: 'bold',
+		color: Colors.black,
+		float: 'left',
+		position: 'relative',
+		left: 24,
+	    top: -80
+	}}
+	    >
+	    John 3:16
+	</div>
+	    </StoryboardElement>
+    
+    ),
+    'crossLeft' : (
+           <StoryboardElement>
+            <div className='left-vertical-1'
+	       style={{
+		width: 3,
+		height: 40,
+		backgroundColor: Colors.black
+	    }}
+            >
+	    </div>
+	    <div className='left-horizontal-1'
+	        style={{
+		width: 40,
+		height: 3,
+		backgroundColor: Colors.black,
+	        position: 'relative',
+		float: 'left',
+		top: -3,
+		left: -40
+	    }}
+	    >
+	    </div>
+	    <div className='left-vertical-2'
+	        style={{
+		width: 3,
+		height: 40,
+		backgroundColor: Colors.black,
+		position: 'relative',
+		float: 'left',
+		top: 0,
+		left: -80
+	    }}
+	    >
+	    </div>
+	    <div className='left-horizontal-2'
+	        style={{
+		width: 40,
+		height: 3,
+		backgroundColor: Colors.black,
+		position: 'relative',
+	        float: 'left',
+		top: 37,
+		left: -80
+	    }}
+	    >
+	    </div>
+	    <div className='left-vertical-3'
+	        style={{
+		width: 3,
+		height: 96,
+		backgroundColor: Colors.black,
+		position: 'relative',
+		float: 'left',
+		top: 37,
+		left: -83
+	    }}
+	    >
+	    </div>
+	    <div className='cross-down-arrow'
+	style={{
+	    fontSize: 25,
+	    color: Colors.black,
+	    position: 'relative',
+	    float: 'left',
+	    top: 105,
+	    left: -95
+	}}
+	    >
+	    ▼
+	</div>
+	</StoryboardElement>
+    ),
+    'crossRight' : (
+	    <StoryboardElement>
+	    <div className='right-vertical-1'
+	style={{
+	    width: 3,
+	    height: 40,
+	    backgroundColor: Colors.black
+	}}
+	    >
+	    </div>
+	    <div className='right-horizontal-1'
+	style={{
+	    width: 40,
+	    height: 3,
+	    backgroundColor: Colors.black,
+	    position: 'relative',
+	    float: 'left',
+	    top: -3,
+	    left: 0
+	}}
+	    >
+	    </div>
+	    <div className='right-vertical-2'
+	style={{
+	    width: 3,
+	    height: 40,
+	    backgroundColor: Colors.black,
+	    position: 'relative',
+	    float: 'left',
+	    top: -3,
+	    left: 0
+	}}
+	    >
+	    </div>
+	    <div className='right-horizontal-2'
+	style={{
+	    width: 40,
+	    height: 3,
+	    backgroundColor: Colors.black,
+	    position: 'relative',
+	    float: 'left',
+	    top: 37,
+	    left: -40
+	}}
+	    >
+	    </div>
+	    <div className='right-vertical-3'
+	style={{
+	    width: 3,
+	    height: 96,
+	    backgroundColor: Colors.black,
+	    position: 'relative',
+	    float: 'left',
+	    top: 37,
+	    left: -83
+	}}
+	    >
+	    </div>
+	    <div className='cross-up-arrow'
+	style={{
+	    fontSize: 25,
+	    color: Colors.black,
+	    position: 'relative',
+	    float: 'left',
+	    top: -48,
+	    left: -95
+	}}
+	    >
+	    ▲
+	</div>
+	    </StoryboardElement>
+    ),
+    'JESUS' : (
 	    <StoryboardElement
 	style={{
 	    textAlign: 'center',
-	    fontSize: 15,
+	    fontSize: 24,
 	    fontWeight: 'bold',
 	    color: Colors.black
 	}}
 	    >
-	    <image src="bible-image.png" alt="John 3:16" width="129" height="76" />
+	    JESUS
+	</StoryboardElement>
+    ),
+    'whiteToDeath': (
+	    <StoryboardElement>
+	    <div
+	style={{
+	    width: 80,
+	    height: 3,
+	    backgroundColor: Colors.white
+	}}
+	    ></div>
+	    </StoryboardElement>
+    ),
+    'redArrows' : (
+            <StoryboardElement>
+	    <div className='upArrow'
+	style={{
+            color: Colors.red,
+	    fontSize: 25
+	}}
+            >
+	    ▲ 
+            </div>
+	    <div className='vert'
+	style={{
+            backgroundColor: Colors.red,
+	    position: 'relative',
+	    width: 3,
+	    height: 18,
+	    left: 9,
+	    top: -6,
+	}}
+	    ></div>
+	    <div className='horiz'
+	style={{
+	    backgroundColor: Colors.red,
+	    position: 'relative',
+	    width: 44,
+	    height: 3,
+	    left: 9,
+	    top: -8,
+	}}
+	    ></div>
+	    <div className='rightArrow'
+	style={{
+	    color: Colors.red,
+	    fontSize: 25,
+	    position: 'relative',
+	    left: 50,
+	    top: -28
+	}}
+	    >
+	    ▶
+	</div>
+	    <div className='questionMark'
+	style={{
+	    color: Colors.red,
+	    fontSize: 25,
+	    fontWeight: 'bold',
+	    position: 'relative',
+	    left: 30,
+	    top: -80
+	}}
+	    >
+	    ?
+	                    </div>
+	    </StoryboardElement>
+    ),
+    '()ToDeath' : (
+	    <StoryboardElement
+	style={{
+	    textAlign: 'center',
+	    fontSize: 24,
+	    fontWeight: 'bold',
+	    color: Colors.red
+	}}
+	    >
+	    (          )
+	</StoryboardElement>
+    ),
+    'whiteToLife' : (
+            <StoryboardElement
+	style={{
+            width: 180,
+	    height: 3,
+	    backgroundColor: Colors.white
+	}}
+	    >
+	</StoryboardElement>
+    ),
+    '()ToLife' : (
+	    <StoryboardElement
+	style={{
+	    textAlign: 'center',
+	    fontSize: 24,
+	    fontWeight: 'bold',
+	    color: Colors.red
+	}}
+	    >
+	    (                          )
+	</StoryboardElement>
+    ),
+    'prayer' : (
+	    <StoryboardElement
+	style={{
+	    fontSize: 22,
+	    color: Colors.black,
+	    margin: 15
+	}}
+	    >
+	    <b>PRAYER:</b>
+	    <br />
+	    Dear Jesus, I am ready to give you the right to take over my life from this time forward. You died to take away my sin of stealing the control of my life from you. I give you my life. Come and live in me! I ask you to control my body, soul, and spirit. I am your child. Amen.
 	</StoryboardElement>
     )
 };

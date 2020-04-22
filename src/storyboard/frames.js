@@ -94,8 +94,8 @@ const StoryboardFrames = {
 	        add: [
 		        {
 		            key: 'sin',
-		            x: 270,
-		            y: 85,
+		            x: 275,
+		            y: 83,
 		            z: 1
 		        }
 	        ]
@@ -259,13 +259,114 @@ const StoryboardFrames = {
 	        foundation: 'auto',
 	        add: [
 		        {
-		            key: 'bible',
-		            x: 175,
-		            y: 100,
+		            key: 'john316Bible',
+		            x: 340,
+		            y: 60,
 		            z: 1
+		        },
+      		        {
+			   key: 'crossLeft',
+			   x: 275,
+			   y: 42,
+			   z: 1
 		        }
 	        ]
 	    }
+    },
+    16: {
+	layout: {
+	    foundation: -2,
+	    add: [
+		{
+		    key: 'crossLeft',
+		    x: 275,
+		    y: 42,
+		    z: 1
+		},
+		{
+		    key: 'JESUS',
+		    x: 264,
+		    y: 83,
+		    z: 1000
+		},
+		{
+		    key: 'crossRight',
+		    x: 315,
+		    y: 42,
+		    z: 1
+		}
+	    ]
+	}
+    },
+    17: {
+	layout: {
+	    foundation: 'auto',
+	    add: [
+		{
+		    key: 'whiteToDeath',
+		    x: 318,
+		    y: 212,
+		    z: 2
+		},
+		{
+		    key: 'redArrows',
+		    x: 320,
+		    y: 169,
+		    z: 3
+		}
+	    ]
+	}
+    },
+    18: {
+	layout: {
+	    foundation: -2,
+	    add: [
+		{
+		    key: 'whiteToDeath',
+		    x: 318,
+		    y: 212,
+		    z: 2
+		},
+		{
+		    key: '()ToDeath',
+		    x: 320,
+		    y: 193,
+		    z: 3
+		}
+	    ]
+	}
+    },
+    19: {
+	layout: {
+	    foundation: 'auto',
+	    add: [
+		{
+		    key: 'whiteToLife',
+		    x: 135,
+		    y: 42,
+		    z: 2
+		},
+		{
+		    key: '()ToLife',
+		    x: 125,
+		    y: 23,
+		    z: 3
+		}
+	    ]
+	}
+    },
+    20: {
+	layout: {
+	    foundation: null,
+	    add: [
+		{
+		    key: 'prayer',
+		    x: 0,
+		    y: 0,
+		    z: 1
+		}
+	    ]
+	}
     }
 };
 
