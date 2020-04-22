@@ -289,16 +289,16 @@ const StoryboardElements = {
 	    color: Colors.black
 	}}
         >
-        &#x1f56e;
+        📖
         </div>
         <div style={{
-		fontSize: 16,
+		fontSize: 18,
 		fontWeight: 'bold',
 		color: Colors.black,
 		float: 'left',
 		position: 'relative',
-		left: 24,
-	    top: -80
+		left: 5,
+	    top: -83
 	}}
 	    >
 	    John 3:16
