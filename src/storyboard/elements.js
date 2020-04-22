@@ -271,15 +271,15 @@ const StoryboardElements = {
     ),
     'otherReligion' : (
 	    <StoryboardElement
-	style={{
-	    textAlign: 'center',
-	    fontSize: 15,
-	    fontWeight: 'bold',
-	    color: Colors.black
-	}}
+	     style={{
+	         textAlign: 'center',
+	         fontSize: 15,
+	         fontWeight: 'bold',
+	         color: Colors.black
+	     }}
 	    >
 	    Other<br />Religion
-	</StoryboardElement>
+	    </StoryboardElement>
     ),
     'john316Bible' : (
 	    <StoryboardElement>
@@ -307,27 +307,27 @@ const StoryboardElements = {
 
     ),
     'crossLeft' : (
-           <StoryboardElement>
+        <StoryboardElement>
             <div className='left-vertical-1'
-	       style={{
-		width: 3,
-		height: 40,
-		backgroundColor: Colors.black
-	    }}
+	         style={{
+		         width: 3,
+		         height: 40,
+		         backgroundColor: Colors.black
+	         }}
             >
-	    </div>
-	    <div className='left-horizontal-1'
-	        style={{
-		width: 40,
-		height: 3,
-		backgroundColor: Colors.black,
-	        position: 'relative',
-		float: 'left',
-		top: -3,
-		left: -40
-	    }}
-	    >
-	    </div>
+	        </div>
+	        <div className='left-horizontal-1'
+             style={{
+		         width: 40,
+		         height: 3,
+		         backgroundColor: Colors.black,
+	             position: 'relative',
+		         float: 'left',
+		         top: -3,
+		         left: -40
+	         }}
+	        >
+	        </div>
 	    <div className='left-vertical-2'
 	        style={{
 		width: 3,
@@ -353,134 +353,135 @@ const StoryboardElements = {
 	    >
 	    </div>
 	    <div className='left-vertical-3'
-	        style={{
-		width: 3,
-		height: 96,
-		backgroundColor: Colors.black,
-		position: 'relative',
-		float: 'left',
-		top: 37,
-		left: -83
+	    style={{
+		    width: 3,
+		    height: 83,
+		    backgroundColor: Colors.black,
+		    position: 'relative',
+		    float: 'left',
+		    top: 37,
+		    left: -83
 	    }}
 	    >
 	    </div>
 	    <div className='cross-down-arrow'
-	style={{
-	    fontSize: 25,
-	    color: Colors.black,
-	    position: 'relative',
-	    float: 'left',
-	    top: 105,
-	    left: -95
-	}}
+         style={{
+	         fontSize: 25,
+	         color: Colors.black,
+	         position: 'relative',
+	         float: 'left',
+	         top: 107,
+	         left: -94
+	     }}
 	    >
 	    ▼
-	</div>
-	</StoryboardElement>
+        </div>
+	        </StoryboardElement>
     ),
     'crossRight' : (
 	    <StoryboardElement>
 	    <div className='right-vertical-1'
-	style={{
-	    width: 3,
-	    height: 40,
-	    backgroundColor: Colors.black
-	}}
+	     style={{
+             marginTop: 4,
+	         width: 3,
+	         height: 36,
+	         backgroundColor: Colors.black
+	     }}
 	    >
 	    </div>
 	    <div className='right-horizontal-1'
-	style={{
-	    width: 40,
-	    height: 3,
-	    backgroundColor: Colors.black,
-	    position: 'relative',
-	    float: 'left',
-	    top: -3,
-	    left: 0
-	}}
+	     style={{
+	         width: 40,
+	         height: 3,
+	         backgroundColor: Colors.black,
+	         position: 'relative',
+	         float: 'left',
+	         top: -3,
+	         left: 0
+	     }}
 	    >
 	    </div>
 	    <div className='right-vertical-2'
-	style={{
-	    width: 3,
-	    height: 40,
-	    backgroundColor: Colors.black,
-	    position: 'relative',
-	    float: 'left',
-	    top: -3,
-	    left: 0
-	}}
+         style={{
+	         width: 3,
+	         height: 40,
+	         backgroundColor: Colors.black,
+	         position: 'relative',
+	         float: 'left',
+	         top: -3,
+	         left: 0
+	     }}
 	    >
 	    </div>
 	    <div className='right-horizontal-2'
-	style={{
-	    width: 40,
-	    height: 3,
-	    backgroundColor: Colors.black,
-	    position: 'relative',
-	    float: 'left',
-	    top: 37,
-	    left: -40
-	}}
+         style={{
+	         width: 40,
+	         height: 3,
+	         backgroundColor: Colors.black,
+	         position: 'relative',
+	         float: 'left',
+	         top: 37,
+	         left: -40
+	     }}
 	    >
 	    </div>
 	    <div className='right-vertical-3'
-	style={{
-	    width: 3,
-	    height: 96,
-	    backgroundColor: Colors.black,
-	    position: 'relative',
-	    float: 'left',
-	    top: 37,
-	    left: -83
-	}}
+	     style={{
+	         width: 3,
+	         height: 96,
+	         backgroundColor: Colors.black,
+	         position: 'relative',
+	         float: 'left',
+	         top: 37,
+	         left: -83
+	     }}
 	    >
 	    </div>
 	    <div className='cross-up-arrow'
-	style={{
-	    fontSize: 25,
-	    color: Colors.black,
-	    position: 'relative',
-	    float: 'left',
-	    top: -48,
-	    left: -95
-	}}
+         style={{
+	         fontSize: 25,
+	         color: Colors.black,
+	         position: 'relative',
+	         float: 'left',
+	         top: -45,
+	         left: -94
+	     }}
 	    >
-	    ▲
-	</div>
+        ▲
+	    </div>
 	    </StoryboardElement>
     ),
     'JESUS' : (
 	    <StoryboardElement
-	style={{
-	    textAlign: 'center',
-	    fontSize: 30,
-	    fontWeight: 'bold',
-	    color: Colors.black,
-        textShadow: `1px 0px ${Colors.black}`
-	}}
+	     style={{
+	         textAlign: 'center',
+	         fontSize: 30,
+	         fontWeight: 'bold',
+	         color: Colors.black,
+             textShadow: `1px 0px ${Colors.black}`
+	     }}
 	    >
 	    JESUS
-	</StoryboardElement>
+	    </StoryboardElement>
     ),
     'whiteToDeath': (
 	    <StoryboardElement>
 	    <div
-	style={{
-	    width: 80,
-	    height: 3,
-	    backgroundColor: Colors.white
-	}}
+          style={{
+	          width: 80,
+	          height: 3,
+	          backgroundColor: Colors.white
+	      }}
 	    ></div>
 	    </StoryboardElement>
     ),
     'redArrows' : (
-            <StoryboardElement>
+        <StoryboardElement>
 	    <div className='upArrow'
-	style={{
-            color: Colors.red,
-	    fontSize: 25
-	}}
+	     style={{
+             color: Colors.red,
+	         fontSize: 25
+	     }}
             >
 	    ▲
             </div>
@@ -490,7 +491,7 @@ const StoryboardElements = {
 	    position: 'relative',
 	    width: 3,
 	    height: 18,
-	    left: 9,
+	    left: 8,
 	    top: -6,
 	}}
 	    ></div>
@@ -500,7 +501,7 @@ const StoryboardElements = {
 	    position: 'relative',
 	    width: 44,
 	    height: 3,
-	    left: 9,
+	    left: 8,
 	    top: -8,
 	}}
 	    ></div>
@@ -510,7 +511,7 @@ const StoryboardElements = {
 	    fontSize: 25,
 	    position: 'relative',
 	    left: 50,
-	    top: -28
+	    top: -25
 	}}
 	    >
 	    ▶
