@@ -76,7 +76,6 @@ class Storyboard extends Component {
                 frameElements = _.concat(frameElements, foundationFrame.layout.add);
                 // update loop condition
                 foundationId = this.getFoundationId(foundationFrame.layout.foundation, foundationId);
-                console.log(foundationId);
             }
         }
 

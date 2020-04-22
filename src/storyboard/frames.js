@@ -57,7 +57,7 @@ const StoryboardFrames = {
 		        {
 		            key: 'redX',
 		            x: 90,
-		            y: 2,
+		            y: 6,
 		            z: 2
 		        },
 		        {
@@ -264,109 +264,109 @@ const StoryboardFrames = {
 		            y: 60,
 		            z: 1
 		        },
-      		        {
-			   key: 'crossLeft',
-			   x: 275,
-			   y: 42,
-			   z: 1
+      		    {
+			        key: 'crossLeft',
+			        x: 275,
+			        y: 42,
+			        z: 1
 		        }
 	        ]
 	    }
     },
     16: {
-	layout: {
-	    foundation: -2,
-	    add: [
-		{
-		    key: 'crossLeft',
-		    x: 275,
-		    y: 42,
-		    z: 1
-		},
-		{
-		    key: 'JESUS',
-		    x: 249,
-		    y: 79,
-		    z: 1000
-		},
-		{
-		    key: 'crossRight',
-		    x: 315,
-		    y: 42,
-		    z: 1
-		}
-	    ]
-	}
+	    layout: {
+	        foundation: -2,
+	        add: [
+		        {
+		            key: 'crossLeft',
+		            x: 275,
+		            y: 42,
+		            z: 2
+		        },
+		        {
+		            key: 'JESUS',
+		            x: 249,
+		            y: 79,
+		            z: 1000
+		        },
+		        {
+		            key: 'crossRight',
+		            x: 315,
+		            y: 42,
+		            z: 2
+		        }
+	        ]
+	    }
     },
     17: {
-	layout: {
-	    foundation: 'auto',
-	    add: [
-		{
-		    key: 'whiteToDeath',
-		    x: 318,
-		    y: 212,
-		    z: 2
-		},
-		{
-		    key: 'redArrows',
-		    x: 320,
-		    y: 169,
-		    z: 3
-		}
-	    ]
-	}
+	    layout: {
+	        foundation: 'auto',
+	        add: [
+		        {
+		            key: 'whiteToDeath',
+		            x: 318,
+		            y: 212,
+		            z: 2
+		        },
+		        {
+		            key: 'redArrows',
+		            x: 323,
+		            y: 169,
+		            z: 3
+		        }
+	        ]
+	    }
     },
     18: {
-	layout: {
-	    foundation: -2,
-	    add: [
-		{
-		    key: 'whiteToDeath',
-		    x: 318,
-		    y: 212,
-		    z: 2
-		},
-		{
-		    key: '()ToDeath',
-		    x: 320,
-		    y: 193,
-		    z: 3
-		}
-	    ]
-	}
+	    layout: {
+	        foundation: -2,
+	        add: [
+		        {
+		            key: 'whiteToDeath',
+		            x: 318,
+		            y: 212,
+		            z: 2
+		        },
+		        {
+		            key: '()ToDeath',
+		            x: 320,
+		            y: 193,
+		            z: 3
+		        }
+	        ]
+	    }
     },
     19: {
-	layout: {
-	    foundation: 'auto',
-	    add: [
-		{
-		    key: 'whiteToLife',
-		    x: 135,
-		    y: 42,
-		    z: 2
-		},
-		{
-		    key: '()ToLife',
-		    x: 125,
-		    y: 23,
-		    z: 3
-		}
-	    ]
-	}
+	    layout: {
+	        foundation: 'auto',
+	        add: [
+		        {
+		            key: 'whiteToLife',
+		            x: 135,
+		            y: 42,
+		            z: 2
+		        },
+		        {
+		            key: '()ToLife',
+		            x: 125,
+		            y: 23,
+		            z: 3
+		        }
+	        ]
+	    }
     },
     20: {
-	layout: {
-	    foundation: null,
-	    add: [
-		{
-		    key: 'prayer',
-		    x: 0,
-		    y: 0,
-		    z: 1
-		}
-	    ]
-	}
+	    layout: {
+	        foundation: null,
+	        add: [
+		        {
+		            key: 'prayer',
+		            x: 0,
+		            y: 0,
+		            z: 1
+		        }
+	        ]
+	    }
     }
 };
 
