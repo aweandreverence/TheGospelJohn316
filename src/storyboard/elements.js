@@ -289,7 +289,7 @@ const StoryboardElements = {
 	    color: Colors.black
 	}}
         >
-	    🕮
+        &#x1f56e;
         </div>
         <div style={{
 		fontSize: 16,
