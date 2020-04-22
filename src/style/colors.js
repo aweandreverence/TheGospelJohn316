@@ -4,6 +4,7 @@ const Colors = {
     gold: '#e2cb29',
     greenLeaf: '#00b800',
     red: '#ff0000',
+    white: '#ffffff',
     // unused colors
     //beige: '#ffb68a',
 };
