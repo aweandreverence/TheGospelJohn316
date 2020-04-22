@@ -289,7 +289,7 @@ const StoryboardElements = {
 	    color: Colors.black
 	}}
         >
-        📖
+        <span role="img" aria-label="Bible">📖</span>
         </div>
         <div style={{
 		fontSize: 18,
