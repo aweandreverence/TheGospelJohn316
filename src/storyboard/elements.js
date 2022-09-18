@@ -1,9 +1,9 @@
 import React from 'react';
 
-import StoryboardElement from '../components/storyboard_element';
-import Colors from '../style/colors';
+import { StoryboardElement } from '../components/storyboard_element';
+import { Colors } from '../style/colors';
 
-const StoryboardElements = {
+export const StoryboardElements = {
     'GOD': (
         <StoryboardElement
            style={{
@@ -578,6 +578,3 @@ const StoryboardElements = {
 	</StoryboardElement>
     )
 };
-
-
-export default StoryboardElements;

@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import { Button, Text, View } from 'react-native';
 //import styles from '../styles';
 
-import StoryboardElements from '../storyboard/elements';
-import StoryboardFrames from '../storyboard/frames';
+import { StoryboardElements } from '../storyboard/elements';
+import { StoryboardFrames } from '../storyboard/frames';
 
 const _ = require('lodash');
 
 
-class Storyboard extends Component {
+export class Storyboard extends Component {
     constructor(props) {
         super(props);
 
@@ -151,6 +151,3 @@ class Storyboard extends Component {
         );
     }
 }
-
-
-export default Storyboard;

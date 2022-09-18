@@ -4,7 +4,7 @@ import { Text, StyleSheet } from 'react-native';
 import styles from '../styles';
 
 
-const Link = props => (
+export const Link = props => (
   <Text
     {...props}
     accessibilityRole="link"
@@ -14,6 +14,3 @@ const Link = props => (
     )}
   />
 );
-
-
-export default Link;

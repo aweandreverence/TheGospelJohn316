@@ -1,4 +1,4 @@
-const Colors = {
+export const Colors = {
     black: '#000',
     brown: '#643200',
     gold: '#e2cb29',
@@ -8,5 +8,3 @@ const Colors = {
     // unused colors
     //beige: '#ffb68a',
 };
-
-export default Colors;

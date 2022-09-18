@@ -1,4 +1,4 @@
-const StoryboardFrames = {
+export const StoryboardFrames = {
     0: {
         layout: {
             foundation: null,
@@ -369,6 +369,3 @@ const StoryboardFrames = {
 	    }
     }
 };
-
-
-export default StoryboardFrames;

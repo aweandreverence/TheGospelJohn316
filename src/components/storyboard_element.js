@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class StoryboardElement extends Component {
+export class StoryboardElement extends Component {
     render() {
         const markup = (
 <div style={this.props.style}>
@@ -11,6 +11,3 @@ class StoryboardElement extends Component {
         return markup;
     }
 }
-
-
-export default StoryboardElement;

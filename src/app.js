@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 //import { Button, Image, Text, ScrollView, View } from 'react-native';
 import { View } from 'react-native';
 
-import styles from './styles';
-import SplashScreen from './splash';
-import Storyboard from './components/storyboard';
+import { styles } from './styles';
+import { SplashScreen } from './splash';
+import { Storyboard } from './components/storyboard';
 
-class App extends Component {
+export default class App extends Component {
     constructor(props) {
         super(props);
 
@@ -42,5 +42,3 @@ class App extends Component {
         );
     }
 }
-
-export default App;

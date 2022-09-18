@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 
-const styles = StyleSheet.create({
+export const styles = StyleSheet.create({
     app: {
         marginHorizontal: 'auto',
         maxWidth: 500
@@ -36,6 +36,3 @@ const styles = StyleSheet.create({
         borderColor: '#000000'
     }
 });
-
-
-export default styles;
