@@ -10,7 +10,7 @@
     "minimist": "^1.2.6",
     "react": "16.12.0",
     "react-dom": "16.12.0",
-    "react-native-web": "0.11.x",
+    "react-native-web": "0.18.x",
     "react-scripts": "5.0.1"
   },
   "devDependencies": {},
