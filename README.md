@@ -8,13 +8,23 @@ View on web: <https://john316.aweandreverence.com>
 
 ### Prerequisites
 
-1. Install `npm` (https://www.npmjs.com/)
+1. Recommended: Install `nvm` (https://github.com/nvm-sh/nvm)
+  1. `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
+  1. `nvm install --lts`
+  1. `nvm use --lts`
+1. Install `npm` (https://www.npmjs.com/) (not needed if using `nvm`)
 1. Install `yarn`
     `[sudo] npm install -g yarn`
 
 ### Install the app
 
 1. `make install`
+
+### Run Development App
+
+1. `make run`
+1. Open up browser to http://localhost:3000
+
 
 ## Credits
 
