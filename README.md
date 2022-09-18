@@ -25,6 +25,11 @@ View on web: <https://john316.aweandreverence.com>
 1. `make run`
 1. Open up browser to http://localhost:3000
 
+### Deploying
+
+The app is deployed to the web via static pages hosted on GitHub Pages.
+
+1. `make deploy`
 
 ## Credits
 
