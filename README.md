@@ -2,7 +2,7 @@
 
 A Gospel-sharing app built on React Native. Runs on web and mobile.
 
-View on web: <https://john316.aweandreverence.com/>
+View on web: <https://john316.aweandreverence.com>
 
 ## Getting Started
 
@@ -18,4 +18,4 @@ View on web: <https://john316.aweandreverence.com/>
 
 ## Credits
 
-This app was commissioned by the [California Southern Baptist Convention](https://www.csbc.com/).
+This app was commissioned by the [California Southern Baptist Convention](https://www.csbc.com).
