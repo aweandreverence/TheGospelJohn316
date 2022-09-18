@@ -7,7 +7,6 @@ import { StoryboardFrames } from '../storyboard/frames';
 
 const _ = require('lodash');
 
-
 export class Storyboard extends Component {
     constructor(props) {
         super(props);
@@ -23,13 +22,13 @@ export class Storyboard extends Component {
     handleBackPressed() {
         this.setState({
             frame: Math.max(0, this.state.frame - 1)
-        })
+        });
     }
 
     handleNextPressed() {
         this.setState({
             frame: Math.min(this.state.frame + 1, _.size(StoryboardFrames) - 1)
-        })
+        });
     }
 
     handleRestartPressed() {
@@ -41,14 +40,22 @@ export class Storyboard extends Component {
 
         if (foundationValue === null) {
             foundationId = null;
-        } else if (typeof(foundationValue) === 'string' && foundationValue === 'auto') {
+        } else if (
+            typeof foundationValue === 'string' &&
+            foundationValue === 'auto'
+        ) {
             foundationId = currentFrameId - 1;
-        } else if (typeof(foundationValue) === 'number' && foundationValue >= 0) {
+        } else if (
+            typeof foundationValue === 'number' &&
+            foundationValue >= 0
+        ) {
             foundationId = foundationValue;
-        } else if (typeof(foundationValue) === 'number' && foundationValue < 0) {
+        } else if (typeof foundationValue === 'number' && foundationValue < 0) {
             foundationId = currentFrameId + foundationValue;
         } else {
-            throw Error(`Illegal value for foundationValue: ${foundationValue}`);
+            throw Error(
+                `Illegal value for foundationValue: ${foundationValue}`
+            );
         }
 
         return foundationId;
@@ -64,7 +71,10 @@ export class Storyboard extends Component {
         // recursively add frame elements from this frame's foundation
         const framesVisited = {};
 
-        let foundationId = this.getFoundationId(frame.layout.foundation, frameId);
+        let foundationId = this.getFoundationId(
+            frame.layout.foundation,
+            frameId
+        );
 
         while (foundationId !== null) {
             if (framesVisited[foundationId]) {
@@ -73,9 +83,15 @@ export class Storyboard extends Component {
             } else {
                 // concatenate frame elements
                 const foundationFrame = StoryboardFrames[foundationId];
-                frameElements = _.concat(frameElements, foundationFrame.layout.add);
+                frameElements = _.concat(
+                    frameElements,
+                    foundationFrame.layout.add
+                );
                 // update loop condition
-                foundationId = this.getFoundationId(foundationFrame.layout.foundation, foundationId);
+                foundationId = this.getFoundationId(
+                    foundationFrame.layout.foundation,
+                    foundationId
+                );
             }
         }
 
@@ -85,24 +101,27 @@ export class Storyboard extends Component {
     buildFrame() {
         const frameElements = this.getFrameElements();
 
-        const renderedFrameElements = _.map(frameElements, (frameElement, index) => {
-            const element = StoryboardElements[frameElement.key];
-            const style = {
-                position: 'absolute',
-                left: frameElement.x,
-                top: frameElement.y,
-                zIndex: frameElement.z
-            };
+        const renderedFrameElements = _.map(
+            frameElements,
+            (frameElement, index) => {
+                const element = StoryboardElements[frameElement.key];
+                const style = {
+                    position: 'absolute',
+                    left: frameElement.x,
+                    top: frameElement.y,
+                    zIndex: frameElement.z
+                };
 
-            const key = 'frame-element-' + index;
-            const className = `element-${frameElement.key}`;
-            const renderedFrameElement = (
-<div key={key} className={className} style={style}>
-  {element}
-</div>
-            );
-            return renderedFrameElement;
-        });
+                const key = 'frame-element-' + index;
+                const className = `element-${frameElement.key}`;
+                const renderedFrameElement = (
+                    <div key={key} className={className} style={style}>
+                        {element}
+                    </div>
+                );
+                return renderedFrameElement;
+            }
+        );
 
         const style = {
             height: 250,
@@ -112,13 +131,11 @@ export class Storyboard extends Component {
         };
 
         const markup = (
-<View>
-  <Text>
-    <div style={style}>
-      {renderedFrameElements}
-    </div>
-  </Text>
-</View>
+            <View>
+                <Text>
+                    <div style={style}>{renderedFrameElements}</div>
+                </Text>
+            </View>
         );
         return markup;
     }
@@ -126,28 +143,41 @@ export class Storyboard extends Component {
     render() {
         const frame = this.buildFrame();
 
-        const nextButton = this.state.frame + 1 >= _.size(StoryboardFrames) ? null : (
-<View>
-  <Button onPress={this.handleNextPressed.bind(this)} title="Next" />
-  <br/>
-</View>
-        );
+        const nextButton =
+            this.state.frame + 1 >= _.size(StoryboardFrames) ? null : (
+                <View>
+                    <Button
+                        onPress={this.handleNextPressed.bind(this)}
+                        title="Next"
+                    />
+                    <br />
+                </View>
+            );
 
-        const prevButton = this.state.frame === 0 ? null : (
-<View>
-  <Button onPress={this.handleBackPressed.bind(this)} title="Go Back" />
-  <br/>
-</View>
-        );
+        const prevButton =
+            this.state.frame === 0 ? null : (
+                <View>
+                    <Button
+                        onPress={this.handleBackPressed.bind(this)}
+                        title="Go Back"
+                    />
+                    <br />
+                </View>
+            );
 
         return (
-<View>
-  {frame}
-  <br/>
-  {nextButton}
-  {prevButton}
-  <Button onPress={this.handleRestartPressed.bind(this)} title="Start over" />
-</View>
+            <View>
+                {frame}
+                <br />
+                <View style={{ flexDirection: 'row' }}>
+                    <View style={{ flex: 1 }}>{prevButton}</View>
+                    <View style={{ flex: 1 }}>{nextButton}</View>
+                </View>
+                <Button
+                    onPress={this.handleRestartPressed.bind(this)}
+                    title="Start over"
+                />
+            </View>
         );
     }
 }
