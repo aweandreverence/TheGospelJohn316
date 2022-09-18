@@ -2,6 +2,8 @@
 
 A Gospel-sharing app built on React Native. Runs on web and mobile.
 
+View on web: <https://john316.aweandreverence.com/>
+
 ## Getting Started
 
 ### Prerequisites
