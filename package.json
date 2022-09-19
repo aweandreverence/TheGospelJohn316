@@ -10,6 +10,7 @@
     "minimist": "^1.2.6",
     "react": "18.2.x",
     "react-dom": "18.2.0",
+    "react-helmet": "^6.1.0",
     "react-native-web": "0.18.x",
     "react-scripts": "5.0.1"
   },

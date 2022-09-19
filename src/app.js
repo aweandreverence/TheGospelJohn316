@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 //import { Button, Image, Text, ScrollView, View } from 'react-native';
+import { Helmet } from 'react-helmet';
 import { View } from 'react-native';
 
 import { styles } from './styles';
 import { SplashScreen } from './splash';
 import { Storyboard } from './components/storyboard';
 
-export default class App extends Component {
+export class App extends Component {
     constructor(props) {
         super(props);
 
@@ -35,6 +36,13 @@ export default class App extends Component {
 
         const screen = screens[this.state.screen];
 
-        return <View style={styles.app}>{screen}</View>;
+        return (
+            <>
+                <Helmet>
+                    <title>The Gospel</title>
+                </Helmet>
+                <View style={styles.app}>{screen}</View>
+            </>
+        );
     }
 }
