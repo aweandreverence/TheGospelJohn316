@@ -1,10 +1,11 @@
 import { StyleSheet } from 'react-native';
 
-
 export const styles = StyleSheet.create({
     app: {
         marginHorizontal: 'auto',
         maxWidth: 500
+        //width: '100%',
+        //height: '100%'
     },
     logo: {
         height: 80
@@ -31,8 +32,9 @@ export const styles = StyleSheet.create({
         fontFamily: 'monospace, monospace'
     },
     storyboardPage: {
-        borderWidth: 1,
+        borderWidth: 4,
         borderStyle: 'solid',
-        borderColor: '#000000'
+        borderColor: '#000000',
+        padding: 50
     }
 });

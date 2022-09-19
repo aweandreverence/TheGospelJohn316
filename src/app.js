@@ -35,10 +35,6 @@ export default class App extends Component {
 
         const screen = screens[this.state.screen];
 
-        return (
-            <View style={styles.app}>
-              {screen}
-            </View>
-        );
+        return <View style={styles.app}>{screen}</View>;
     }
 }
