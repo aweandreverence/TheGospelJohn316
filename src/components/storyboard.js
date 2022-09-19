@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Button, Text, View } from 'react-native';
-//import styles from '../styles';
+//import { styles } from '../styles';
 
 import { StoryboardElements } from '../storyboard/elements';
-import { StoryboardFrames } from '../storyboard/frames';
+import { StoryboardFramesMap } from '../storyboard/frames';
 
 const _ = require('lodash');
 
@@ -27,7 +27,10 @@ export class Storyboard extends Component {
 
     handleNextPressed() {
         this.setState({
-            frame: Math.min(this.state.frame + 1, _.size(StoryboardFrames) - 1)
+            frame: Math.min(
+                this.state.frame + 1,
+                _.size(StoryboardFramesMap) - 1
+            )
         });
     }
 
@@ -63,7 +66,7 @@ export class Storyboard extends Component {
 
     getFrameElements() {
         const frameId = this.state.frame;
-        const frame = StoryboardFrames[frameId];
+        const frame = StoryboardFramesMap[frameId];
 
         // initialize with elements from current frame
         let frameElements = frame.layout.add;
@@ -82,7 +85,7 @@ export class Storyboard extends Component {
                 foundationId = null;
             } else {
                 // concatenate frame elements
-                const foundationFrame = StoryboardFrames[foundationId];
+                const foundationFrame = StoryboardFramesMap[foundationId];
                 frameElements = _.concat(
                     frameElements,
                     foundationFrame.layout.add
@@ -144,7 +147,7 @@ export class Storyboard extends Component {
         const frame = this.buildFrame();
 
         const nextButton =
-            this.state.frame + 1 >= _.size(StoryboardFrames) ? null : (
+            this.state.frame + 1 >= _.size(StoryboardFramesMap) ? null : (
                 <View>
                     <Button
                         onPress={this.handleNextPressed.bind(this)}
