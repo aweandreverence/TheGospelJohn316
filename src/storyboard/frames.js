@@ -366,7 +366,98 @@ const StoryboardFrames = [
             foundation: null,
             add: [
                 {
-                    key: 'prayer',
+                    key: 'verse-philippians-2:7-8',
+                    x: 0,
+                    y: 0,
+                    z: 1
+                }
+            ]
+        }
+    },
+    {
+        layout: {
+            foundation: null,
+            add: [
+                {
+                    key: 'verse-john-14:6',
+                    x: 0,
+                    y: 0,
+                    z: 1
+                }
+            ]
+        }
+    },
+    {
+        layout: {
+            foundation: null,
+            add: [
+                {
+                    key: 'verse-hebrews-9:22',
+                    x: 0,
+                    y: 0,
+                    z: 1
+                }
+            ]
+        }
+    },
+    {
+        layout: {
+            foundation: null,
+            add: [
+                {
+                    key: 'callToAction',
+                    x: 0,
+                    y: 0,
+                    z: 1
+                }
+            ]
+        }
+    },
+    {
+        layout: {
+            foundation: null,
+            add: [
+                {
+                    key: 'verse-john-3:36',
+                    x: 0,
+                    y: 0,
+                    z: 1
+                }
+            ]
+        }
+    },
+    {
+        layout: {
+            foundation: null,
+            add: [
+                {
+                    key: 'verse-romans-10:9-10',
+                    x: 0,
+                    y: 0,
+                    z: 1
+                }
+            ]
+        }
+    },
+    {
+        layout: {
+            foundation: null,
+            add: [
+                {
+                    key: 'verse-romans-10:13',
+                    x: 0,
+                    y: 0,
+                    z: 1
+                }
+            ]
+        }
+    },
+    {
+        layout: {
+            foundation: null,
+            add: [
+                {
+                    key: 'sinnersPrayer',
                     x: 0,
                     y: 0,
                     z: 1
