@@ -6,7 +6,7 @@
   "main": "src/index.js",
   "dependencies": {
     "acorn": "^8.8.0",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.23",
     "minimist": "^1.2.6",
     "react": "18.2.x",
     "react-dom": "18.2.0",
