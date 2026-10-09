@@ -1,0 +1,3 @@
+# Repository-wide review ownership; keep owners eligible for write access.
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+* @aweandreverence/web
