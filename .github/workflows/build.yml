@@ -1,0 +1,29 @@
+name: Production build
+
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.16.0'
+      - run: corepack enable
+      - run: corepack prepare yarn@1.22.22 --activate
+      - run: yarn install --frozen-lockfile
+      - run: yarn test --watchAll=false --runInBand
+        env:
+          CI: 'true'
+      - run: yarn build
+        env:
+          CI: 'true'
+      - run: git diff --exit-code -- package.json yarn.lock
